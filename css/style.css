@@ -639,16 +639,47 @@ h3.my-profession
 }
 .portfolio .portfolio-item-inner
 {
+    position: relative;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
    
 }
+.portfolio .portfolio-item-inner:hover .portfolio-demo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .portfolio .portfolio-item-inner .portfolio-img img
 {
     width: 100%;  
     display: block;
+}
+.portfolio .portfolio-item-inner .portfolio-demo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    background: var(--bg-black-900);
+    display: none;
+}
+.portfolio .portfolio-item-inner .portfolio-demo a
+{
+    height: 60px;
+    width: 200px;
+    background: var(---black-100);
+    border: 1px solid var(--skin-color);
+    border-radius: 30px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: var(--skin-color);
+    font-size: 26px;
 }
 /* contact-title */
 .contact-title
